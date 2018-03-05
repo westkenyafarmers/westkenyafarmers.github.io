@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>FARMER PROFILES</title>
+</head>
+
+<body>
+  <div class="cotn_principal">
+    <h2 class="close">CLOSE &#10005;</h2>
+    <div class="cont_centrar">
+      <div class="cont_login">
+        <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+            <div class="cont_ba_opcitiy">
+              <h2>LOGIN</h2>
+              <a href="sellers.html"><button class="btn_login" onclick="cambiar_login()">LOGIN</button></a>
+            </div>
+          </div>
+          <div class="col_md_sign_up">
+            <div class="cont_ba_opcitiy">
+              <h2>SIGN UP</h2>
+              <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cont_back_info">
+          <div class="cont_img_back_grey">
+            <img src="img/headerBG2.jpg" alt="" />
+          </div>
+
+        </div>
+        <div class="cont_forms">
+          <div class="cont_img_back_">
+            <img src="img/fruitsBg.jpg" alt="" />
+          </div>
+          <div class="cont_form_login">
+            <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+            <h2>LOGIN</h2>
+            <input type="email" placeholder="Email" value="email" />
+            <input type="password" placeholder="Password"  />
+            <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+          </div>
+
+          <div class="cont_form_sign_up">
+            <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+            <h2>SIGN UP</h2>
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="User" />
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm Password" />
+            <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="landing-page-container-fluid">
+    <div class="container" id="heading">
+      <div class="jumbotron">
+        <img src="img/logo.png" style="width:270px; margin-left:800px;height:200px">
+      </div>
+    </div>
+    <div class="container" id="body-landing-page">
+      <h4 style="text-align:center; margin-top:5%;font-weight:bolder; font-size:30px">ARE YOU BUYING OR SELLING?</h4>
+
+      <div class="button-landing">
+        <button type="click" name="buyer" style="width:400px; height:80px;background-color:black" id="button1" onclick="login2()"><span>BUYER</span></button>
+        <button type="click" name="seller" style="width:400px; height:80px;background-color:#154360" id="button2"><span>SELLER</span></button>
+      </div>
+    </div>
+    <div class="well" id="foot-well" style="opacity:0.8">
+      <h6 style="font-size:15px; font-weight:bolder; text-align:center">&#169;Copyright 2017. FarmBook Inc. Terms & Conditions Apply</h6>
+    </div>
+  </div>
+  <div class="sidebar" id="sidebar2">
+    <a href="https://www.facebook.com/newton.bii.9"><img src="img/facebook.png" id="facebook" style="margin-top:10px;margin-left:4px"></a>
+    <a href="https://twitter.com/BiiNewton"><img src="img/twitter.png" id="twitter" style="margin-top:10px;margin-left:4px"></a>
+    <a href="https://www.linkedin.com/in/newton-kipng-eno-bii-maritim-b7458475"><img src="img/linkedin.png" id="linkedin" style="margin-top:10px;margin-left:4px"></a>
+    <a href="https://www.instagram.com/biinewton/?hl=en"><img src="img/instagram.png" id="instagram" style="margin-top:10px;margin-left:4px"></a>
+    <a href="https://plus.google.com/u/0/+NewtonBii"><img src="img/google-plus.png" id="google-plus" style="margin-top:10px;margin-left:4px;margin-bottom:10px"></a>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/index.js" charset="utf-8"></script>
+<script src="js/scripts.js" charset="utf-8"></script>
+<script src="js/scripts1.js" charset="utf-8"></script>
+
+
+</html>

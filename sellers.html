@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Farmer Profile</title>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="css/style2.css">
+
+
+</head>
+
+<body>
+  <div id="carousel">
+    <div class="btn-bar">
+      <div id="buttons">
+        <a id="prev" href="#">
+          <</a><a id="next" href="#">></a> </div>
+    </div>
+    <div id="slides">
+      <ul>
+        <li class="slide">
+          <div class="quoteContainer">
+            <h3>BUNGOMA</h3>
+            <p style="font-weight:bolder">
+              Maize: Ksh.2300 per 90Kg bag</br>
+              Beans: Ksh.4000 per 90Kg bag</br>
+              Tomatoes: Ksh.80 per kg</br>
+              Capsicum: Ksh.120 per Kg</br>
+              Potatoes: Ksh.120 per Kg</br>
+              French Beans: Ksh.120 per Kg</br>
+            </p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="quoteContainer">
+            <h3>CHWELE</h3>
+            <p style="font-weight:bolder">
+              Maize: Ksh.2000 per 90Kg bag</br>
+              Beans: Ksh.4000 per 90Kg bag</br>
+              Tomatoes: Ksh.80 per kg</br>
+              Capsicum: Ksh.120 per Kg</br>
+              Potatoes: Ksh.120 per Kg</br>
+              French Beans: Ksh.120 per Kg</br>
+            </p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="quoteContainer">
+            <h3>WEBUYE</h3>
+            <p style="font-weight:bolder">
+              Maize: Ksh.2000 per 90Kg bag</br>
+              Beans: Ksh.4000 per 90Kg bag</br>
+              Tomatoes: Ksh.80 per kg</br>
+              Capsicum: Ksh.120 per Kg</br>
+              Potatoes: Ksh.120 per Kg</br>
+              French Beans: Ksh.120 per Kg</br>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid" id="container-sellers-page">
+    <img src="img/logo.png" style="z-index:10; background-color:white; opacity:0.8; width:240px; height:200px">
+
+    <div class="Wrapper" ng-app="myApp">
+      <div class="Sidebar" ng-class="boolie ? 'is-collapsed' : ''">
+        <header class="Sidebar-header">
+          <div class="Sidebar-logo">
+          </div>
+        </header>
+        <nav role="navigation">
+          <ul>
+            <li class="Sidebar-navItem">
+              <i class="Sidebar-menuIcon fa fa-money"></i>>
+              <a href="" onclick="toggle_visibility1()">Market Information</a>
+            </li>
+            <li class="Sidebar-navItem">
+              <i class="Sidebar-menuIcon fa fa-line-chart"></i>
+              <a href="#" onclick="toggle_visibility2()">Your Activity</a>
+            </li>
+            <li class="Sidebar-navItem">
+              <i class="Sidebar-menuIcon fa fa-star"></i>
+              <a href="#">Your Rating</a>
+            </li>
+            <li class="Sidebar-navItem">
+              <i class="Sidebar-menuIcon fa fa-shopping-cart"></i>
+              <a href="#">Your Stall</a>
+            </li>
+            <li class="Sidebar-navItem">
+              <i class="Sidebar-menuIcon fa fa-plus"></i>
+              <a href="#" onclick="toggle_visibility()">Add New Produce</a>
+            </li>
+            <li class="Sidebar-navItem">
+              <i class="Sidebar-menuIcon fa fa-sign-out"></i>
+              <a href="#">Log out</a>
+            </li>
+          </ul>
+        </nav>
+        <footer class="Sidebar-footer" ng-click="boolie = !boolie">
+          <i class="Sidebar-toggleArrow Sidebar-menuIcon fa fa-arrow-left" ng-class="boolie ? 'rotate' : ''"></i>
+          <span class="Sidebar-toggleText">Minimize menu</span>
+        </footer>
+      </div>
+      <div class="Main">
+
+        <body>
+          <form style="margin-top:-1%;height:100%; display:none" id="form-upload-produce">
+            <h1>PLEASE FILL IN THE DETAILS FOR YOUR PRODUCE TO BE PUBLISHED :</h1>
+
+            <div class="contentform">
+              <div id="sendmessage"> Your produce has been uploaded successfully.</div>
+
+
+              <div class="leftcontact">
+                <div class="form-group">
+                  <p>Produce Category <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-user"></i></span>
+                  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+             <option selected>Select </option>
+            <option value="1">Fruits</option>
+            <option value="2">Vegetables</option>
+            <option value="3">Cereals</option>
+            <option value="3">Roots and Tubers</option>
+            </select>
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Quantity <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                  <input type="phone" name="phone" id="email" data-rule="phone" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire." />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Location <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-home"></i></span>
+                  <input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné." />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Produce Image <span>*</span></p>
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+                  <input type="submit" value="Upload Image" name="submit">
+                </div>
+
+
+
+              </div>
+
+              <div class="rightcontact">
+
+                <div class="form-group">
+                  <p>Town <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                  <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné." />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Phone number <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-phone"></i></span>
+                  <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres" />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Harvest Status <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-info"></i></span>
+                  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+             <option selected>Select </option>
+            <option value="1">Ready</option>
+            <option value="2">Ready in a week</option>
+            <option value="3">Ready in Two Weeks</option>
+            <option value="3">Ready in a Month</option>
+            </select>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <p>Price <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+                  <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné." />
+                  <div class="validation"></div>
+                </div>
+
+
+              </div>
+            </div>
+            <button type="submit" class="bouton-contact">PUBLISH</button>
+          </form>
+          <div class="well" id="successfull-submit-box">
+<h3>Your Product has been successfully submitted for review</h3>
+          </div>
+
+
+            <img src="img/graph.png" style="display:none" id="graph">
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  <script src="js/scripts1.js" charset="utf-8"></script>
+
+  </body>
+
+</html>

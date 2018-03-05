@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="less/style.less">
+  <link rel="stylesheet" href="css/styles3.css">
+  <title>Buyers</title>
+</head>
+
+<body>
+  <div class="container-fluid" id="buyer-page-container-fluid">
+      <div id="form-container front" style="z-index:10; position:absolute;right:50px; bottom:-100px;display:none">
+        <h1 class="form-label">Contact Farmer</h1>
+        <form>
+          <div class="group">
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+          </div>
+          <div class="group">
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email</label>
+          </div>
+          <!-- Message body -->
+          <textarea class="message-form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+          <input type="submit" class="button raised btn btn-primary btn-lg" id="submit-button" onclick="loadPage()">
+        </form>
+        <div class="subscribed">
+          <h3 style="display:none">You Have Successfully submitted your Contacts</h3>
+        </div>
+      </div>
+
+
+    <div class="sidebar" id="sidebar1">
+      <div class="list-items">
+        <p id="x-button">&#10060;</p>
+        <img src="img/logo.png" style="margin-left:20%; margin-top:-30%">
+        <div class="well" style="padding:20%;margin:10%;height:200px; margin-top:-10%;background-color:#154360; opacity:1;">
+          <div class="w3-container" style="color:white; margin-top:-50%">
+            <h3 style="text-align:center">GUEST</h3>
+            <img src="img/user.png" style="margin-left:-10%">
+          </div>
+        </div>
+        <div class="well" style="margin:10%; text-align:center; font-size:25px;font-weight: bolder" id="log-in">
+          <div><a href="#">LOG IN</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="whole-page">
+      <div class="container" id="heading">
+        <div class="jumbotron  navbar navbar-inverse" data-spy="affix" id="jumbotron-buyer-page">
+          <img src="img/logo.png" style="width:270px; margin-left:800px;height:200px">
+        </div>
+      </div>
+      <div class="container" id="body-buyer">
+        <div class="" id="cereals-buyer-page-well">
+          <div class="container" id="cereals-buyer-page-container">
+            <h4>CEREALS</h4>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="carousel slide multi-item-carousel" id="theCarousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="col-xs-4">
+                        <a href="" id="contact-details" onclick="showContacts()">
+                          <div class="box1" onclick="showContacts()">
+                            <figure>
+                              <img src="img/AGRA-Farmers-5.jpg" alt="maize" id="maize" class="img-responsive">
+
+                              <div class="buy"> buy </div>
+                              <figcaption>
+                                <ul type="none">
+                                  <li> location : Bungoma</li>
+                                  <li> price : 800sh/sack</li>
+                                  <li>quantity : *</li>
+                                  <li>famers id : 122j23l</li>
+                                  <li> rating : <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span> </li>
+                                </ul>
+                              </figcaption>
+                            </figure>
+
+                            <div class="details">
+
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                    </div>
+                    <div class="item">
+                      <div class="col-xs-4">
+                        <a href="" id="contact-details" onclick="showContacts()">
+
+
+                          <div class="box1" onclick="showContacts()">
+                            <figure>
+                              <img src="img/68942552-farmer-wallpapers.jpg" alt="maize" id="maize" class="img-responsive">
+                              <figcaption>
+                                <ul type="none">
+                                  <li> location : Chwele</li>
+                                  <li> price : 800sh/sack</li>
+                                  <li>quantity : *</li>
+                                  <li>famers id : 122j23l</li>
+                                  <li> rating : <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span> </li>
+                                </ul>
+                              </figcaption>
+                            </figure>
+
+                            <div class="details">
+
+                            </div>
+                          </div>
+
+
+
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-xs-4">
+                        <a href="" id="contact-details" onclick="showContacts()">
+                          <div class="box1" onclick="showContacts()">
+                            <figure>
+                              <img src="img/images.jpeg" alt="maize" id="maize" class="img-responsive">
+                              <figcaption>
+                                <ul type="none">
+                                  <li> location : nainyuki</li>
+                                  <li> price : 800sh/sack</li>
+                                  <li>quantity : *</li>
+                                  <li>famers id : 122j23l</li>
+                                  <li> rating : <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span> </li>
+                                </ul>
+                              </figcaption>
+                            </figure>
+
+                            <div class="details">
+
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-xs-4">
+                        <a href="" id="contact-details" onclick="showContacts()">
+                          <div class="box1" onclick="showContacts()">
+                            <figure>
+                              <img src="img/Keiyo-Marakwet-Success-Story-3-1-1024x490.jpg" alt="maize" id="maize" class="img-responsive">
+                              <figcaption>
+                                <ul type="none">
+                                  <li> location : nainyuki</li>
+                                  <li> price : 800sh/sack</li>
+                                  <li>quantity : *</li>
+                                  <li>famers id : 122j23l</li>
+                                  <li> rating : <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span> </li>
+                                </ul>
+                              </figcaption>
+                            </figure>
+
+                            <div class="details">
+
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-xs-4">
+                        <a href="" id="contact-details" onclick="showContacts()">
+
+                          <div class="box1" onclick="showContacts()">
+                            <figure>
+                              <img src="img/1 (1).jpg" alt="maize" id="maize" class="img-responsive">
+                              <figcaption>
+                                <ul type="none">
+                                  <li> location : nainyuki</li>
+                                  <li> price : 800sh/sack</li>
+                                  <li>quantity : *</li>
+                                  <li>famers id : 122j23l</li>
+                                  <li> rating : <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span> </li>
+                                </ul>
+                              </figcaption>
+                            </figure>
+
+                            <div class="details">
+
+                            </div>
+                          </div>
+
+
+
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="col-xs-4">
+                        <a href="" id="contact-details" onclick="showContacts()">
+                          <div class="box1" onclick="showContacts()">
+                            <figure>
+                              <img src="img/1 (2).jpg" alt="maize" id="maize" class="img-responsive">
+                              <figcaption>
+                                <ul type="none">
+                                  <li> location : nainyuki</li>
+                                  <li> price : 800sh/sack</li>
+                                  <li>quantity : *</li>
+                                  <li>famers id : 122j23l</li>
+                                  <li> rating : <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span> </li>
+
+                              </figcaption>
+                            </figure>
+                            <div class="details">
+
+
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- add  more items here -->
+                    <!-- Example item start:  -->
+
+                    <div class="item">
+                      <div class="col-xs-4">
+                        <a href="" id="contact-details" onclick="showContacts()">
+                          <div class="box1" onclick="showContacts()">
+                            <figure>
+                              <img src="img/1 (3).jpg" alt="maize" id="maize" class="img-responsive">
+                              <figcaption>
+                                <ul type="none">
+                                  <li> location : nainyuki</li>
+                                  <li> price : 800sh/sack</li>
+                                  <li>quantity : *</li>
+                                  <li>famers id : 122j23l</li>
+                                  <li> rating : <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span> </li>
+                                </ul>
+                              </figcaption>
+                            </figure>
+
+                            <div class="details">
+
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!--  Example item end -->
+                  </div>
+                  <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                  <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" id="vegetables-buyer-page-well">
+        <div class="container" id="vegetables-buyer-page-container">
+          <h4>VEGETABLE</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel slide multi-item-carouselz" id="theCarouselz">
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/0fb12570954ea903a243605c7336da5a--backyard-vegetable-gardens-veg-garden.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <div class="stars">
+                                    Rating
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+
+
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+
+
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/4642624bc1e32020152967cbed66ced6.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+
+
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/1452645965210.jpeg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span>
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/download.jpeg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span>
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/e57fb97c79767079d4784140f64a6755--hanging-vegetables-vegetables-garden-ideas.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span>
+
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+
+
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/fbcf9b3bb1101d8d933aa0ade61ecda1--storage-containers-storage-bins.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span>
+
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+                          <div class="details">
+
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- add  more items here -->
+                  <!-- Example item start:  -->
+
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/raised-beds-various-vegetables-2x.jpgfr" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span>
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!--  Example item end -->
+                </div>
+                <a class="left carousel-control" href="#theCarouselz" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarouselz" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="" id="fruits-buyer-page-well">
+        <div class="container" id="fruits-buyer-page-container">
+          <h4>FRUITS</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel slide multi-item-carouselq" id="theCarouselq">
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/fruit2.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+
+
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+
+
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/fruitb.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating :
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+
+
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href src=" ">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/e57fb97c79767079d4784140f64a6755--hanging-vegetables-vegetables-garden-ideas.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating :
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+
+                                </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href=" 1">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/fbcf9b3bb1101d8d933aa0ade61ecda1--storage-containers-storage-bins.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/Fruits-Bokeh-Red-Fruit-Watermelon-Melon-Nature-Inspirational-Photos.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+
+
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/images (4).jpeg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+                          <div class="details">
+
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- add  more items here -->
+                  <!-- Example item start:  -->
+
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/images (3).jpeg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!--  Example item end -->
+                </div>
+                <a class="left carousel-control" href="#theCarouselq" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarouselq" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="" id="tubers-buyer-page-well">
+        <div class="container" id="tubers-buyer-page-container">
+          <h4>TUBERS</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel slide multi-item-carousels" id="theCarousels">
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/1.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+
+
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+
+
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/images (1).jpeg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+
+
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/images (2).jpeg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/Sweet-potatoes-GettyImages-592411298-58bc9a215f9b58af5cc1ae4f.jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/1 (1).jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+
+
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/1 (2).jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+                          <div class="details">
+
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- add  more items here -->
+                  <!-- Example item start:  -->
+
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <a href="" id="contact-details" onclick="showContacts()">
+                        <div class="box1" onclick="showContacts()">
+                          <figure>
+                            <img src="img/1 (3).jpg" alt="maize" id="maize" class="img-responsive">
+                            <figcaption>
+                              <ul type="none">
+                                <li> location : nainyuki</li>
+                                <li> price : 800sh/sack</li>
+                                <li>quantity : *</li>
+                                <li>famers id : 122j23l</li>
+                                <li> rating : <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star"></span> </li>
+                              </ul>
+                            </figcaption>
+                          </figure>
+
+                          <div class="details">
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!--  Example item end -->
+                </div>
+                <a class="left carousel-control" href="#theCarousels" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#theCarousels" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="" id="foot-well" style="opacity:0.8">
+        <h6 style="font-size:15px; font-weight:bolder; text-align:center">&#169;Copyright 2017. FarmBook Inc. Terms & Conditions Apply</h6>
+      </div>
+
+      <div class="sidebar" id="sidebar2">
+        <a href="https://www.facebook.com/newton.bii.9"><img src="img/facebook.png" id="facebook" style="margin-top:10px;margin-left:4px"></a>
+        <a href="https://twitter.com/BiiNewton"><img src="img/twitter.png" id="twitter" style="margin-top:10px;margin-left:4px"></a>
+        <a href="https://www.linkedin.com/in/newton-kipng-eno-bii-maritim-b7458475"><img src="img/linkedin.png" id="linkedin" style="margin-top:10px;margin-left:4px"></a>
+        <a href="https://www.instagram.com/biinewton/?hl=en"><img src="img/instagram.png" id="instagram" style="margin-top:10px;margin-left:4px"></a>
+        <a href="https://plus.google.com/u/0/+NewtonBii"><img src="img/google-plus.png" id="google-plus" style="margin-top:10px;margin-left:4px;margin-bottom:10px"></a>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src="js/scripts.js" charset="utf-8"></script>
+
+
+</html>

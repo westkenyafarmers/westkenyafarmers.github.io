@@ -1,0 +1,392 @@
+#landing-page-container-fluid {
+  background-image: url("../img/headerBG2.jpg");
+}
+
+#whole-page {
+  background-color: #154360;
+}
+
+.container#heading {
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sidebar1 {
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  background-color: white;
+  opacity: 0.8;
+  font-size: 20px;
+  color: white;
+  display: none;
+  position: absolute;
+}
+
+#facebook {
+  display: none;
+}
+
+#twitter {
+  display: none;
+}
+
+#instagram {
+  display: none;
+}
+
+#linkedin {
+  display: none;
+}
+
+#google-plus {
+  display: none;
+}
+
+#log-in:hover {
+  background-color: #154360;
+  opacity: 0.8;
+}
+
+.contact-details {
+  align-items: center;
+}
+
+.button-landing {
+  font-size: 20px;
+  color: white;
+  padding: 10%;
+}
+
+#button1 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#button1 span {
+  cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#button1:hover span {
+  padding-right: 25px;
+}
+
+#button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#button2 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#button2 span {
+  cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#button2:hover span {
+  padding-right: 25px;
+}
+
+#button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#sidebar2 img {
+  -webkit-transition: all 20s ease;
+  -moz-transition: all 20s ease;
+  -ms-transition: all 20s ease;
+  transition: all 20s ease;
+}
+
+#sidebar2 img:hover {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#body-landing-page {
+  background-color: white;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+#sidebar2 {
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  opacity: 0.9;
+  margin-left: 94%;
+  margin-top: -51%;
+  z-index: 20;
+  position: absolute;
+}
+
+#x-button {
+  cursor: pointer;
+  color: #154360;
+}
+
+.list-items1 {
+  text-align: right;
+  font-size: 25px;
+}
+
+#jumbotron-buyer-page {
+  background-color: white;
+  opacity: 1;
+  height: 200px;
+  margin-right: 29px;
+}
+
+.jumbotron {
+  opacity: 0.7;
+}
+
+.list-items1:hover span {
+  width: 100%;
+  background-color: white;
+}
+
+.span-items {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.span-item1:hover {
+  width: 100%;
+  background-color: white;
+}
+
+.span-item2:hover {
+  width: 100%;
+  background-color: white;
+}
+
+.span-item3:hover {
+  width: 100%;
+  background-color: white;
+}
+
+#toggle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0%;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#toggle span {
+  height: 2px;
+  background: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#cereals-buyer-page-well {
+  background-image: url("../img/cerealsBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 29px;
+}
+
+#vegetables-buyer-page-well {
+  background-image: url("../img/vegetablesBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 29px;
+}
+
+#fruits-buyer-page-well {
+  background-image: url("../img/fruitsBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 29px;
+}
+
+#tubers-buyer-page-well {
+  background-image: url("../img/tubersBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 29px;
+}
+
+#body-buyer {
+  text-align: center;
+      margin-top: 241px;
+}
+
+#cereals-buyer-page-container {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+}
+
+#vegetables-buyer-page-container {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+}
+
+#fruits-buyer-page-container {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+}
+
+#tubers-buyer-page-container {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+
+}
+/*
+lewis css*/
+
+figcaption{
+  color: #131212;
+}
+h4{
+  background: black;
+font-size: 46px;
+text-align: center;
+}
+
+.multi-item-carousel .carousel-inner > .item {
+  -webkit-transition: 500ms ease-in-out left;
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+    -webkit-transition: 500ms ease-in-out all;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform: none!important;
+            transform: none!important;
+  }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none;
+}
+body {
+  background: #333;
+  color: #ddd;
+}
+h1 {
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px #000000;
+}
+.box1 {
+  width: 264px;
+      padding: 10px;
+      border: 2px solid gray;
+      height: 392px;
+      margin: 0;
+      color: #fff;
+      text-align: left;
+      box-shadow: 10px 10px 5px #000000;
+}
+.box1:hover {
+    background-color: yellow;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#maize{
+      height: 271px;
+}
+
+
+.vegetebales{
+  margin-top: 64px;
+}
+.fruits{
+  margin-top: 64px;
+
+}
+.tubber{
+  margin-top: 64px;
+}
+
+
+
+/* lewis star css */
+.checked {
+    color: orange;
+      margin-top: -33px;
+}
+.affix {
+
+    width: 1071px;
+      z-index: 22;
+}

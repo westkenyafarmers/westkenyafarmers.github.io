@@ -1,0 +1,356 @@
+
+
+.form-container {
+  background: #288CF0;
+  background: #FFF;
+  border: 2px solid #288CF0;
+  padding: 40px;
+  margin-bottom: 40px;
+  margin: 2rem auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: white;
+  text-align: center;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  background: #FFF;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  transform: translateY(-50%);
+  color: #288CF0;
+
+  &:before,
+    &:after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    }
+
+    &:before{
+    background: #ecf0f1;
+    top: 0;
+    }
+
+    &:after{
+      background: #FFF;
+      bottom: 0;
+    }
+}
+
+
+/* container sorrounding message */
+
+.message-form-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1rem;
+  box-shadow: 0 0 0 1px #288CF0;
+  transition: all 0.5s ease;
+}
+
+.message-form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px #288CF0;
+}
+
+.message-form-control::-webkit-input-placeholder {
+  color: #288CF0;
+  font-size: 18px;
+  line-height: 100px;
+  transition: all 0.5s ease;
+  margin: 0 auto;
+}
+
+.message-form-control:focus::-webkit-input-placeholder {
+  color: #AAA;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 0%;
+}
+
+
+/* Button styling */
+
+.button {
+  background: #FFF;
+  border-radius: 0;
+  font-family: '  Roboto', sans-serif;
+  color: #288CF0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  border: 2px solid #288CF0;
+  text-align: center;
+}
+
+.button:hover {
+  background: #288CF0;
+  color: #FFF;
+  border: 2px solid #288CF0;
+}
+
+.button.raised {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0);
+}
+
+.button.raised:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.button.raised:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* form starting stylings*/
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input {
+  background: transparent;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #288CF0;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+/* LABEL */
+
+label {
+  color: #288CF0;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+
+/* active state */
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #288CF0;
+}
+
+
+/* BOTTOM BARS */
+
+.bar {
+  position: relative;
+  display: block;
+  width: 50%;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #288CF0;
+  transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 100%;
+}
+
+.bar:after {
+  right: 0%;
+}
+
+
+/* active state */
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 100%;
+}
+
+
+/* HIGHLIGHTER */
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+/* active state */
+
+input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+
+@import "compass/css3";
+
+/*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/
+
+// Default options for table style
+$table-breakpoint: 480px;
+$table-background-color: #FFF;
+$table-text-color: #024457;
+$table-outer-border: 1px solid #167F92;
+$table-cell-border: 1px solid #D9E4E6;
+
+// Extra options for table style (parse these arguments when including your mixin)
+$table-border-radius: 10px;
+$table-highlight-color: #EAF3F3;
+$table-header-background-color: #167F92;
+$table-header-text-color: #FFF;
+$table-header-border: 1px solid #FFF;
+
+// The Responstable mixin
+
+@mixin responstable(
+  $breakpoint: $table-breakpoint,
+  $background-color: $table-background-color,
+  $text-color: $table-text-color,
+  $outer-border: $table-outer-border,
+  $cell-border: $table-cell-border,
+  $border-radius: none,
+  $highlight-color: none,
+  $header-background-color: $table-background-color,
+  $header-text-color: $table-text-color,
+  $header-border: $table-cell-border) {
+
+  .responstable {
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: $background-color;
+    color: $text-color;
+    border-radius: $border-radius;
+    border: $outer-border;
+
+    tr {
+      border: $cell-border;
+      &:nth-child(odd) { // highlight the odd rows with a color
+        background-color: $highlight-color;
+      }
+    }
+
+    th {
+      display: none; // hide all the table header for mobile
+      border: $header-border;
+      background-color: $header-background-color;
+      color: $header-text-color;
+      padding: 1em;
+      &:first-child { // show the first table header for mobile
+        display: table-cell;
+        text-align: center;
+      }
+      &:nth-child(2) { // show the second table header but replace the content with the data-th from the markup for mobile
+        display: table-cell;
+        span {display:none;}
+        &:after {content:attr(data-th);
+      }
+      @media (min-width: $breakpoint) {
+        &:nth-child(2) { // hide the data-th and show the normal header for tablet and desktop
+          span {display: block;}
+          &:after {display: none;}
+        }
+      }
+    }
+
+    td {
+      display: block; // display the table data as one block for mobile
+      word-wrap: break-word;
+      max-width: 7em;
+      &:first-child {
+        display: table-cell; // display the first one as a table cell (radio button) for mobile
+        text-align: center;
+        border-right: $cell-border;
+      }
+      @media (min-width: $breakpoint) {
+        border: $cell-border;
+      }
+    }
+
+    th, td {
+      text-align: left;
+      margin: .5em 1em;
+      @media (min-width: $breakpoint) {
+        display: table-cell; // show the table as a normal table for tablet and desktop
+        padding: 1em;
+      }
+    }
+  }
+}
+
+// Include the mixin (with extra options as overrides)
+
+@include responstable(
+  $border-radius: $table-border-radius,
+  $highlight-color: $table-highlight-color,
+  $header-background-color: $table-header-background-color,
+  $header-text-color: $table-header-text-color,
+  $header-border: $table-header-border);
+
+// General styles
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+  span {color: #167F92;}
+}
